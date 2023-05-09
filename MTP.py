@@ -14,9 +14,9 @@ phoneNumber = phonenumbers.parse(input("Enter the phone number: "))
 
 # Features
 valid = phonenumbers.is_valid_number(phoneNumber)
-Carrier = carrier.name_for_number(phoneNumber, 'en')
-Timezone = timezone.time_zones_for_number(phoneNumber, 'en')
-Region = geocoder.description_for_number(phoneNumber, 'en')
+Carrier = carrier.name_for_number(phoneNumber,'en')
+Timezone = timezone.time_zones_for_number(phoneNumber)
+Region = geocoder.description_for_number(phoneNumber,'en')
 
 # On-screen print
 print(f'Validation: {valid}')
