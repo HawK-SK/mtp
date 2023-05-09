@@ -1,0 +1,4 @@
+colorama==0.4.6
+phonenumbers==8.13.0
+pyfiglet==0.8.post1
+termcolor==2.3.0
