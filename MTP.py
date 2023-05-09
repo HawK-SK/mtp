@@ -13,7 +13,7 @@ print("Enter the number with the country code! ")
 phoneNumber = phonenumbers.parse(input("Enter the phone number: "))
 
 # Features
-valid = phonenumbers.is_valid_number(phoneNumber, 'en')
+valid = phonenumbers.is_valid_number(phoneNumber)
 Carrier = carrier.name_for_number(phoneNumber, 'en')
 Timezone = timezone.time_zones_for_number(phoneNumber, 'en')
 Region = geocoder.description_for_number(phoneNumber, 'en')
